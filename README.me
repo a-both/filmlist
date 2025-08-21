@@ -1,35 +1,81 @@
-   # 🎬 Filmlista – Flask Projekt
+🎬 Filmlista Webalkalmazás
 
-   Ez egy egyszerű Flask alapú webalkalmazás, amely lehetővé teszi, hogy egy adott évhez tartozó filmeket jeleníts meg poszterképeikkel és az IMDb linkjeikkel.  
-   A projekt célja gyakorlati tapasztalat szerzése a **Flask keretrendszer**, valamint a **HTML/CSS** használatában.
+Ez a projekt egy Flask alapú webalkalmazás, amely filmeket listáz az OMDb API segítségével. A felhasználó megadhat egy évet, az alkalmazás pedig megjeleníti az abban az évben megjelent filmek listáját, borítóképével és IMDb linkjével együtt.
 
----
+✨ Jellemzők
 
-## ✨ Funkciók
+Év szerinti keresés: Könnyedén szűrheted a filmeket évjárat szerint.
 
-- 🔎 **Keresés év alapján** – a felhasználók könnyedén kereshetnek filmeket évjárat szerint  
-- 🎥 **Filmek listázása** – a filmek poszterképeikkel együtt jelennek meg  
-- 🌐 **IMDb linkek** – minden filmhez tartozik link az IMDb adatlapra  
-- 📱 **Reszponzív dizájn** – mobilon és asztali böngészőben egyaránt jól használható  
+Dinamikus tartalom: Az adatok valós időben, az OMDb API-ból érkeznek.
 
----
+Minimalista dizájn: Letisztult és könnyen kezelhető felület.
 
-## 📂 Tartalomjegyzék
+🚀 Futtatás helyi gépen
 
-1. [Telepítés és Futtatás](#-telepítés-és-futtatás)  
-2. [Használat](#-használat)  
-3. [Függőségek](#-függőségek)  
-4. [Konfiguráció](#-konfiguráció)  
-5. [Példa](#-példa)  
-6. [Hibakeresés](#-hibakeresés)  
-7. [Közreműködők](#-közreműködők)  
-8. [Licenc](#-licenc)  
+Az alkalmazás indításához kövesd az alábbi egyszerű lépéseket:
 
----
+1. Előfeltételek
 
-## 🚀 Telepítés és Futtatás
+Győződj meg róla, hogy a Python (3.6 vagy újabb) telepítve van a rendszereden.
 
-1. **Repo klónozása**  
-   ```bash
-   git clone <repo_link>
-   cd <repo_mappa_neve>
+2. A projekt klónozása
+
+Nyisd meg a terminált és klónozd a projektet:
+
+git clone https://github.com/a-both/filmlist.git
+cd filmlista
+
+3. Függőségek telepítése
+
+Telepítsd a szükséges Flask és requests csomagokat:
+
+pip install Flask requests
+
+4. Az alkalmazás indítása
+
+Futtasd a movies.py fájlt a szerver elindításához:
+
+python movie/movies.py
+
+5. Megtekintés a böngészőben
+
+Nyisd meg a böngésződben a http://127.0.0.1:5000 címet, és kezdődhet a filmnézés!
+
+📁 Mappa struktúra
+
+filmlista/
+├── movie/
+│   └── movies.py       # A webalkalmazás fő logikája
+├── templates/
+│   └── index.html      # A fő oldal HTML sablonja
+├── static/
+│   └── style.css       # Az oldal stíluslapja
+└── README.md           # Ez a leírás
+
+🛠️ OMDb API beállítás
+
+
+
+
+
+Regisztrálj egy ingyenes API kulcsot a OMDb API oldalon.
+
+
+
+Helyezd el az API kulcsot a movies.py fájlban az API_KEY változóban.
+
+📝 Megjegyzések
+
+
+
+
+
+Győződj meg róla, hogy a fájlnevek és elérési utak pontosak (pl. README.md, nem Readme.md).
+
+
+
+A GitHub Markdown renderelése szigorú, ezért ügyelj a helyes szintaxisra (pl. szóközök, üres sorok).
+
+
+
+Ha a képek nem jelennek meg, ellenőrizd, hogy azok elérhetők-e a repository-ban vagy külső URL-en keresztül.

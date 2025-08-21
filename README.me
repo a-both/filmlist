@@ -1,44 +1,62 @@
-🎬 Filmlista Webalkalmazás
-Ez a projekt egy Flask alapú webalkalmazás, amely filmeket listáz az OMDb API segítségével. A felhasználó megadhat egy évet, az alkalmazás pedig megjeleníti az abban az évben megjelent filmek listáját, borítóképével és IMDb linkjével együtt.
+# 🎬 Filmlista Flask Projekt
 
-✨ Jellemzők
-Év szerinti keresés: Könnyedén szűrheted a filmeket évjárat szerint.
+Ez egy egyszerű Flask alapú webalkalmazás, amely az adott évhez tartozó filmeket jeleníti meg a poszterképeikkel és az IMDb linkjeikkel. A projekt célja, hogy gyakorlati tapasztalatot szerezzek a **Flask keretrendszer** és a **HTML/CSS** használatában.
 
-Dinamikus tartalom: Az adatok valós időben, az OMDb API-ból érkeznek.
+## ✨ Funkciók
 
-Minimalista design: Letisztult és könnyen kezelhető felület.
+* **Keresés adott év alapján**: A felhasználók könnyedén kereshetnek filmeket évjárat szerint.
 
-🚀 Futtatás helyi gépen
-Az alkalmazás indításához kövesd az alábbi egyszerű lépéseket:
+* **Filmek listázása**: A filmek poszterképeikkel együtt jelennek meg a listában.
 
-1. Előfeltételek
-Győződj meg róla, hogy a Python telepítve van a rendszereden.
+* **Linkelés az IMDb oldalra**: Minden filmhez tartozik egy link, amely az IMDb adatlapra mutat.
 
-2. A projekt klónozása
-Nyisd meg a terminált és klónozd a projektet:
+* **Letisztult és reszponzív dizájn**: A felület reszponzív, így mobil eszközökön is jól használható.
 
-git clone https://github.com/a-both/filmlist.git
-cd filmlista
+---
 
-3. Függőségek telepítése
-Telepítsd a szükséges Flask és requests csomagokat:
+## 🚀 Telepítés és Futtatás
 
-pip install Flask requests
+Az alkalmazás helyi futtatásához kövesd az alábbi lépéseket:
 
-4. Az alkalmazás indítása
-Futtasd a movies.py fájlt a szerver elindításához:
+1. Klónozd a repót a gépedre:
 
-python movie/movies.py
+git clone <repo_link>
 
-5. Megtekintés a böngészőben
-Nyisd meg a böngésződben a http://127.0.0.1:5000 címet, és kezdődhet a filmnézés!
 
-📁 Mappa Struktúra
-filmlista/
-├── movie/
-│   └── movies.py      
-├── templates/
-│   └── index.html     
-├── static/
-│   └── style.css      
-└── README.md           
+2. Lépj be a projektmappába:
+
+cd <repo_mappa_neve>
+
+
+3. Hozd létre a virtuális környezetet, hogy a csomagok ne zavarják a gépeden lévő többi Python projektet:
+
+python -m venv venv
+
+
+4. Aktiváld a virtuális környezetet:
+
+* **Windows**:
+
+  ```
+  venv\Scripts\activate
+  ```
+
+* **Mac/Linux**:
+
+  ```
+  source venv/bin/activate
+  ```
+
+5. Telepítsd a szükséges csomagokat:
+
+pip install flask requests
+
+
+6. Futtasd az alkalmazást:
+
+python app.py
+
+
+7. Nyisd meg a böngészőben:
+
+http://127.0.0.1:5000/

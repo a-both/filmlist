@@ -1,62 +1,79 @@
-# 🎬 Filmlista Flask Projekt
+# 🎬 Filmlista – Flask Projekt
 
-Ez egy egyszerű Flask alapú webalkalmazás, amely az adott évhez tartozó filmeket jeleníti meg a poszterképeikkel és az IMDb linkjeikkel. A projekt célja, hogy gyakorlati tapasztalatot szerezzek a **Flask keretrendszer** és a **HTML/CSS** használatában.
+Ez egy egyszerű Flask alapú webalkalmazás, amely lehetővé teszi, hogy egy adott évhez tartozó filmeket jeleníts meg poszterképeikkel és az IMDb linkjeikkel.  
+A projekt célja gyakorlati tapasztalat szerzése a **Flask keretrendszer**, valamint a **HTML/CSS** használatában.
+
+---
 
 ## ✨ Funkciók
 
-* **Keresés adott év alapján**: A felhasználók könnyedén kereshetnek filmeket évjárat szerint.
+- 🔎 **Keresés év alapján** – a felhasználók könnyedén kereshetnek filmeket évjárat szerint  
+- 🎥 **Filmek listázása** – a filmek poszterképeikkel együtt jelennek meg  
+- 🌐 **IMDb linkek** – minden filmhez tartozik link az IMDb adatlapra  
+- 📱 **Reszponzív dizájn** – mobilon és asztali böngészőben egyaránt jól használható  
 
-* **Filmek listázása**: A filmek poszterképeikkel együtt jelennek meg a listában.
+---
 
-* **Linkelés az IMDb oldalra**: Minden filmhez tartozik egy link, amely az IMDb adatlapra mutat.
+## 📂 Tartalomjegyzék
 
-* **Letisztult és reszponzív dizájn**: A felület reszponzív, így mobil eszközökön is jól használható.
+1. [Telepítés és Futtatás](#-telepítés-és-futtatás)  
+2. [Használat](#-használat)  
+3. [Függőségek](#-függőségek)  
+4. [Konfiguráció](#-konfiguráció)  
+5. [Példa](#-példa)  
+6. [Hibakeresés](#-hibakeresés)  
+7. [Közreműködők](#-közreműködők)  
+8. [Licenc](#-licenc)  
 
 ---
 
 ## 🚀 Telepítés és Futtatás
 
-Az alkalmazás helyi futtatásához kövesd az alábbi lépéseket:
+1. **Repo klónozása**  
+   ```bash
+   git clone <repo_link>
+   cd <repo_mappa_neve>
+Virtuális környezet létrehozása
 
-1. Klónozd a repót a gépedre:
-
-git clone <repo_link>
-
-
-2. Lépj be a projektmappába:
-
-cd <repo_mappa_neve>
-
-
-3. Hozd létre a virtuális környezetet, hogy a csomagok ne zavarják a gépeden lévő többi Python projektet:
-
+bash
+Másolás
+Szerkesztés
 python -m venv venv
+Virtuális környezet aktiválása
 
+Windows:
 
-4. Aktiváld a virtuális környezetet:
+bash
+Másolás
+Szerkesztés
+venv\Scripts\activate
+Mac/Linux:
 
-* **Windows**:
+bash
+Másolás
+Szerkesztés
+source venv/bin/activate
+Szükséges csomagok telepítése
 
-  ```
-  venv\Scripts\activate
-  ```
-
-* **Mac/Linux**:
-
-  ```
-  source venv/bin/activate
-  ```
-
-5. Telepítsd a szükséges csomagokat:
-
+bash
+Másolás
+Szerkesztés
 pip install flask requests
+Alkalmazás futtatása
 
-
-6. Futtasd az alkalmazást:
-
+bash
+Másolás
+Szerkesztés
 python app.py
+Megnyitás böngészőben
 
-
-7. Nyisd meg a böngészőben:
-
+cpp
+Másolás
+Szerkesztés
 http://127.0.0.1:5000/
+🖥 Használat
+Írd be a keresett évet a beviteli mezőbe
+
+A rendszer megjeleníti az adott év filmjeit poszterképekkel
+
+Kattints egy film címére, hogy megnyisd az IMDb adatlapját
